@@ -47,10 +47,6 @@ plugins {
 
 gradlePlugin {
     plugins {
-        register("pill-configurable") {
-            id = "pill-configurable"
-            implementationClass = "org.jetbrains.kotlin.pill.PillConfigurablePlugin"
-        }
         register("jps-compatible") {
             id = "jps-compatible"
             implementationClass = "org.jetbrains.kotlin.pill.JpsCompatiblePlugin"
