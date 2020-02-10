@@ -658,6 +658,13 @@ tasks {
         )
     }
 
+    register("idea-plugin-performance-tests") {
+        dependsOn("dist")
+        dependsOn(
+            ":idea:performanceTest"
+        )
+    }
+
     register("android-ide-tests") {
         dependsOn("dist")
         dependsOn(
