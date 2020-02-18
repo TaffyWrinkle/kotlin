@@ -6216,6 +6216,11 @@ public class DiagnosticsTestSpecGenerated extends AbstractDiagnosticsTestSpec {
                             runTest("compiler/tests-spec/testData/diagnostics/notLinked/overload-resolution/building-the-overload-candidate-set-ocs/infix-function-call/pos/3.kt");
                         }
 
+                        @TestMetadata("4.kt")
+                        public void test4() throws Exception {
+                            runTest("compiler/tests-spec/testData/diagnostics/notLinked/overload-resolution/building-the-overload-candidate-set-ocs/infix-function-call/pos/4.kt");
+                        }
+
                         public void testAllFilesPresentInPos() throws Exception {
                             KotlinTestUtils.assertAllTestsPresentByMetadataWithExcluded(this.getClass(), new File("compiler/tests-spec/testData/diagnostics/notLinked/overload-resolution/building-the-overload-candidate-set-ocs/infix-function-call/pos"), Pattern.compile("^(.+)\\.kt$"), null, true);
                         }
