@@ -8237,70 +8237,70 @@ public fun <C : MutableCollection<in Char>> CharArray.toCollection(destination: 
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun <T> Array<out T>.toHashSet(): HashSet<T> {
     return toCollection(HashSet<T>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun ByteArray.toHashSet(): HashSet<Byte> {
     return toCollection(HashSet<Byte>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun ShortArray.toHashSet(): HashSet<Short> {
     return toCollection(HashSet<Short>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun IntArray.toHashSet(): HashSet<Int> {
     return toCollection(HashSet<Int>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun LongArray.toHashSet(): HashSet<Long> {
     return toCollection(HashSet<Long>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun FloatArray.toHashSet(): HashSet<Float> {
     return toCollection(HashSet<Float>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun DoubleArray.toHashSet(): HashSet<Double> {
     return toCollection(HashSet<Double>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun BooleanArray.toHashSet(): HashSet<Boolean> {
     return toCollection(HashSet<Boolean>(mapCapacity(size)))
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  */
 public fun CharArray.toHashSet(): HashSet<Char> {
     return toCollection(HashSet<Char>(mapCapacity(size)))
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun <T> Array<out T>.toList(): List<T> {
     return when (size) {
@@ -8311,7 +8311,7 @@ public fun <T> Array<out T>.toList(): List<T> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun ByteArray.toList(): List<Byte> {
     return when (size) {
@@ -8322,7 +8322,7 @@ public fun ByteArray.toList(): List<Byte> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun ShortArray.toList(): List<Short> {
     return when (size) {
@@ -8333,7 +8333,7 @@ public fun ShortArray.toList(): List<Short> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun IntArray.toList(): List<Int> {
     return when (size) {
@@ -8344,7 +8344,7 @@ public fun IntArray.toList(): List<Int> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun LongArray.toList(): List<Long> {
     return when (size) {
@@ -8355,7 +8355,7 @@ public fun LongArray.toList(): List<Long> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun FloatArray.toList(): List<Float> {
     return when (size) {
@@ -8366,7 +8366,7 @@ public fun FloatArray.toList(): List<Float> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun DoubleArray.toList(): List<Double> {
     return when (size) {
@@ -8377,7 +8377,7 @@ public fun DoubleArray.toList(): List<Double> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun BooleanArray.toList(): List<Boolean> {
     return when (size) {
@@ -8388,7 +8388,7 @@ public fun BooleanArray.toList(): List<Boolean> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  */
 public fun CharArray.toList(): List<Char> {
     return when (size) {
@@ -8399,14 +8399,14 @@ public fun CharArray.toList(): List<Char> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun <T> Array<out T>.toMutableList(): MutableList<T> {
     return ArrayList(this.asCollection())
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun ByteArray.toMutableList(): MutableList<Byte> {
     val list = ArrayList<Byte>(size)
@@ -8415,7 +8415,7 @@ public fun ByteArray.toMutableList(): MutableList<Byte> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun ShortArray.toMutableList(): MutableList<Short> {
     val list = ArrayList<Short>(size)
@@ -8424,7 +8424,7 @@ public fun ShortArray.toMutableList(): MutableList<Short> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun IntArray.toMutableList(): MutableList<Int> {
     val list = ArrayList<Int>(size)
@@ -8433,7 +8433,7 @@ public fun IntArray.toMutableList(): MutableList<Int> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun LongArray.toMutableList(): MutableList<Long> {
     val list = ArrayList<Long>(size)
@@ -8442,7 +8442,7 @@ public fun LongArray.toMutableList(): MutableList<Long> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun FloatArray.toMutableList(): MutableList<Float> {
     val list = ArrayList<Float>(size)
@@ -8451,7 +8451,7 @@ public fun FloatArray.toMutableList(): MutableList<Float> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun DoubleArray.toMutableList(): MutableList<Double> {
     val list = ArrayList<Double>(size)
@@ -8460,7 +8460,7 @@ public fun DoubleArray.toMutableList(): MutableList<Double> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun BooleanArray.toMutableList(): MutableList<Boolean> {
     val list = ArrayList<Boolean>(size)
@@ -8469,7 +8469,7 @@ public fun BooleanArray.toMutableList(): MutableList<Boolean> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this array.
+ * Returns a new [MutableList] filled with all elements of this array.
  */
 public fun CharArray.toMutableList(): MutableList<Char> {
     val list = ArrayList<Char>(size)
@@ -8478,7 +8478,7 @@ public fun CharArray.toMutableList(): MutableList<Char> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8491,7 +8491,7 @@ public fun <T> Array<out T>.toSet(): Set<T> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8504,7 +8504,7 @@ public fun ByteArray.toSet(): Set<Byte> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8517,7 +8517,7 @@ public fun ShortArray.toSet(): Set<Short> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8530,7 +8530,7 @@ public fun IntArray.toSet(): Set<Int> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8543,7 +8543,7 @@ public fun LongArray.toSet(): Set<Long> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8556,7 +8556,7 @@ public fun FloatArray.toSet(): Set<Float> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8569,7 +8569,7 @@ public fun DoubleArray.toSet(): Set<Double> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8582,7 +8582,7 @@ public fun BooleanArray.toSet(): Set<Boolean> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10312,7 +10312,7 @@ public infix fun CharArray.subtract(other: Iterable<Char>): Set<Char> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10323,7 +10323,7 @@ public fun <T> Array<out T>.toMutableSet(): MutableSet<T> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10334,7 +10334,7 @@ public fun ByteArray.toMutableSet(): MutableSet<Byte> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10345,7 +10345,7 @@ public fun ShortArray.toMutableSet(): MutableSet<Short> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10356,7 +10356,7 @@ public fun IntArray.toMutableSet(): MutableSet<Int> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10367,7 +10367,7 @@ public fun LongArray.toMutableSet(): MutableSet<Long> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10378,7 +10378,7 @@ public fun FloatArray.toMutableSet(): MutableSet<Float> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10389,7 +10389,7 @@ public fun DoubleArray.toMutableSet(): MutableSet<Double> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -10400,7 +10400,7 @@ public fun BooleanArray.toMutableSet(): MutableSet<Boolean> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given array.
+ * Returns a new [MutableSet] containing all distinct elements from the given array.
  * 
  * The returned set preserves the element iteration order of the original array.
  */

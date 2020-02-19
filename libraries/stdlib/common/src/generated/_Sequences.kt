@@ -720,7 +720,7 @@ public fun <T, C : MutableCollection<in T>> Sequence<T>.toCollection(destination
 }
 
 /**
- * Returns a [HashSet] of all elements.
+ * Returns a new [HashSet] of all elements.
  *
  * The operation is _terminal_.
  */
@@ -729,7 +729,7 @@ public fun <T> Sequence<T>.toHashSet(): HashSet<T> {
 }
 
 /**
- * Returns a [List] containing all elements.
+ * Returns a new [List] containing all elements.
  *
  * The operation is _terminal_.
  */
@@ -738,7 +738,7 @@ public fun <T> Sequence<T>.toList(): List<T> {
 }
 
 /**
- * Returns a [MutableList] filled with all elements of this sequence.
+ * Returns a new [MutableList] filled with all elements of this sequence.
  *
  * The operation is _terminal_.
  */
@@ -747,7 +747,7 @@ public fun <T> Sequence<T>.toMutableList(): MutableList<T> {
 }
 
 /**
- * Returns a [Set] of all elements.
+ * Returns a new [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original sequence.
  *
@@ -1000,7 +1000,7 @@ public fun <T, K> Sequence<T>.distinctBy(selector: (T) -> K): Sequence<T> {
 }
 
 /**
- * Returns a mutable set containing all distinct elements from the given sequence.
+ * Returns a new [MutableSet] containing all distinct elements from the given sequence.
  * 
  * The returned set preserves the element iteration order of the original sequence.
  *
