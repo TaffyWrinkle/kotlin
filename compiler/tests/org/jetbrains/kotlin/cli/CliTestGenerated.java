@@ -902,6 +902,11 @@ public class CliTestGenerated extends AbstractCliTest {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cli/js-dce"), Pattern.compile("^(.+)\\.args$"), TargetBackend.ANY, false);
         }
 
+        @TestMetadata("dceExtraHelp.args")
+        public void testDceExtraHelp() throws Exception {
+            runTest("compiler/testData/cli/js-dce/dceExtraHelp.args");
+        }
+
         @TestMetadata("dceHelp.args")
         public void testDceHelp() throws Exception {
             runTest("compiler/testData/cli/js-dce/dceHelp.args");
