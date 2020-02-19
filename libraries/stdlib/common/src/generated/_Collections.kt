@@ -1211,7 +1211,7 @@ public fun <T> Iterable<T>.toHashSet(): HashSet<T> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun <T> Iterable<T>.toList(): List<T> {
     if (this is Collection) {
@@ -1241,7 +1241,7 @@ public fun <T> Collection<T>.toMutableList(): MutableList<T> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original collection.
  */

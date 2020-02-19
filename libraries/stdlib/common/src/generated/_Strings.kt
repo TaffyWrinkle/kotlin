@@ -738,7 +738,7 @@ public fun CharSequence.toHashSet(): HashSet<Char> {
 }
 
 /**
- * Returns a new [List] containing all characters.
+ * Returns a [List] containing all characters.
  */
 public fun CharSequence.toList(): List<Char> {
     return when (length) {
@@ -756,7 +756,7 @@ public fun CharSequence.toMutableList(): MutableList<Char> {
 }
 
 /**
- * Returns a new [Set] of all characters.
+ * Returns a [Set] of all characters.
  * 
  * The returned set preserves the element iteration order of the original char sequence.
  */

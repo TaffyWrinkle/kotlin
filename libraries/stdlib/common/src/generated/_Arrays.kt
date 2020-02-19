@@ -8300,7 +8300,7 @@ public fun CharArray.toHashSet(): HashSet<Char> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun <T> Array<out T>.toList(): List<T> {
     return when (size) {
@@ -8311,7 +8311,7 @@ public fun <T> Array<out T>.toList(): List<T> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun ByteArray.toList(): List<Byte> {
     return when (size) {
@@ -8322,7 +8322,7 @@ public fun ByteArray.toList(): List<Byte> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun ShortArray.toList(): List<Short> {
     return when (size) {
@@ -8333,7 +8333,7 @@ public fun ShortArray.toList(): List<Short> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun IntArray.toList(): List<Int> {
     return when (size) {
@@ -8344,7 +8344,7 @@ public fun IntArray.toList(): List<Int> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun LongArray.toList(): List<Long> {
     return when (size) {
@@ -8355,7 +8355,7 @@ public fun LongArray.toList(): List<Long> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun FloatArray.toList(): List<Float> {
     return when (size) {
@@ -8366,7 +8366,7 @@ public fun FloatArray.toList(): List<Float> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun DoubleArray.toList(): List<Double> {
     return when (size) {
@@ -8377,7 +8377,7 @@ public fun DoubleArray.toList(): List<Double> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun BooleanArray.toList(): List<Boolean> {
     return when (size) {
@@ -8388,7 +8388,7 @@ public fun BooleanArray.toList(): List<Boolean> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  */
 public fun CharArray.toList(): List<Char> {
     return when (size) {
@@ -8478,7 +8478,7 @@ public fun CharArray.toMutableList(): MutableList<Char> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8491,7 +8491,7 @@ public fun <T> Array<out T>.toSet(): Set<T> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8504,7 +8504,7 @@ public fun ByteArray.toSet(): Set<Byte> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8517,7 +8517,7 @@ public fun ShortArray.toSet(): Set<Short> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8530,7 +8530,7 @@ public fun IntArray.toSet(): Set<Int> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8543,7 +8543,7 @@ public fun LongArray.toSet(): Set<Long> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8556,7 +8556,7 @@ public fun FloatArray.toSet(): Set<Float> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8569,7 +8569,7 @@ public fun DoubleArray.toSet(): Set<Double> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */
@@ -8582,7 +8582,7 @@ public fun BooleanArray.toSet(): Set<Boolean> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original array.
  */

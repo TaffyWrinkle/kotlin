@@ -729,7 +729,7 @@ public fun <T> Sequence<T>.toHashSet(): HashSet<T> {
 }
 
 /**
- * Returns a new [List] containing all elements.
+ * Returns a [List] containing all elements.
  *
  * The operation is _terminal_.
  */
@@ -747,7 +747,7 @@ public fun <T> Sequence<T>.toMutableList(): MutableList<T> {
 }
 
 /**
- * Returns a new [Set] of all elements.
+ * Returns a [Set] of all elements.
  * 
  * The returned set preserves the element iteration order of the original sequence.
  *

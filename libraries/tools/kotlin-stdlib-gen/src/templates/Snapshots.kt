@@ -38,7 +38,7 @@ object Snapshots : TemplateGroupBase() {
     } builder {
         doc {
             """
-            Returns a new [Set] of all ${f.element.pluralize()}.
+            Returns a [Set] of all ${f.element.pluralize()}.
 
             The returned set preserves the element iteration order of the original ${f.collection}.
             """
@@ -139,7 +139,7 @@ object Snapshots : TemplateGroupBase() {
         includeDefault()
         include(Maps, CharSequences)
     } builder {
-        doc { "Returns a new [List] containing all ${f.element.pluralize()}." }
+        doc { "Returns a [List] containing all ${f.element.pluralize()}." }
         returns("List<T>")
         body { "return this.toMutableList().optimizeReadOnlyList()" }
         body(Iterables) {
