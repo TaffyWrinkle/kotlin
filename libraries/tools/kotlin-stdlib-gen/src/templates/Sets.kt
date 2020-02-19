@@ -5,6 +5,10 @@
 
 package templates
 
+import templates.DocExtensions.collection
+import templates.DocExtensions.element
+import templates.DocExtensions.mapResult
+import templates.DocExtensions.pluralize
 import templates.Family.*
 import templates.SequenceClass.*
 
@@ -52,8 +56,8 @@ object SetOps : TemplateGroupBase() {
         doc {
             """
                 Returns a ${f.mapResult} containing only distinct ${f.element.pluralize()} from the given ${f.collection}.
-
-                Among equal ${f.element.pluralize()} of the given ${f.collection}, only the first one will be present in the resulting ${f.mapResult}.
+                ${if (f.isPrimitiveSpecialization) "" else "\n" +
+                "Among equal ${f.element.pluralize()} of the given ${f.collection}, only the first one will be present in the resulting ${f.mapResult}."}
                 The ${f.element.pluralize()} in the resulting ${f.mapResult} are in the same order as they were in the source ${f.collection}.
                 """
         }
@@ -75,8 +79,8 @@ object SetOps : TemplateGroupBase() {
             """
                 Returns a ${f.mapResult} containing only ${f.element.pluralize()} from the given ${f.collection}
                 having distinct keys returned by the given [selector] function.
-
-                Among ${f.element.pluralize()} of the given ${f.collection} with equal keys, only the first one will be present in the resulting ${f.mapResult}.
+                ${if (f.isPrimitiveSpecialization) "" else "\n" +
+                "Among ${f.element.pluralize()} of the given ${f.collection} with equal keys, only the first one will be present in the resulting ${f.mapResult}."}
                 The ${f.element.pluralize()} in the resulting ${f.mapResult} are in the same order as they were in the source ${f.collection}.
                 """
         }

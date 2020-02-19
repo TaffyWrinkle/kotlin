@@ -9840,7 +9840,6 @@ public fun <T> Array<out T>.distinct(): List<T> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9852,7 +9851,6 @@ public fun ByteArray.distinct(): List<Byte> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9864,7 +9862,6 @@ public fun ShortArray.distinct(): List<Short> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9876,7 +9873,6 @@ public fun IntArray.distinct(): List<Int> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9888,7 +9884,6 @@ public fun LongArray.distinct(): List<Long> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9900,7 +9895,6 @@ public fun FloatArray.distinct(): List<Float> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9912,7 +9906,6 @@ public fun DoubleArray.distinct(): List<Double> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9924,7 +9917,6 @@ public fun BooleanArray.distinct(): List<Boolean> {
 /**
  * Returns a list containing only distinct elements from the given array.
  * 
- * Among equal elements of the given array, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9957,7 +9949,6 @@ public inline fun <T, K> Array<out T>.distinctBy(selector: (T) -> K): List<T> {
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9977,7 +9968,6 @@ public inline fun <K> ByteArray.distinctBy(selector: (Byte) -> K): List<Byte> {
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -9997,7 +9987,6 @@ public inline fun <K> ShortArray.distinctBy(selector: (Short) -> K): List<Short>
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -10017,7 +10006,6 @@ public inline fun <K> IntArray.distinctBy(selector: (Int) -> K): List<Int> {
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -10037,7 +10025,6 @@ public inline fun <K> LongArray.distinctBy(selector: (Long) -> K): List<Long> {
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -10057,7 +10044,6 @@ public inline fun <K> FloatArray.distinctBy(selector: (Float) -> K): List<Float>
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -10077,7 +10063,6 @@ public inline fun <K> DoubleArray.distinctBy(selector: (Double) -> K): List<Doub
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
@@ -10097,7 +10082,6 @@ public inline fun <K> BooleanArray.distinctBy(selector: (Boolean) -> K): List<Bo
  * Returns a list containing only elements from the given array
  * having distinct keys returned by the given [selector] function.
  * 
- * Among elements of the given array with equal keys, only the first one will be present in the resulting list.
  * The elements in the resulting list are in the same order as they were in the source array.
  * 
  * @sample samples.collections.Collections.Transformations.distinctAndDistinctBy
